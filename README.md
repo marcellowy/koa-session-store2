@@ -35,7 +35,7 @@ const CONFIG = {
   signed: true, /** (boolean) signed or not (default true) */
   rolling: false, /** (boolean) Force a session identifier cookie to be set on every response. The expiration is reset to the   original maxAge, resetting the expiration countdown. (default is false) */
   renew: false, /** (boolean) renew session when session is nearly expired, so we can always keep user logged in. (default is false)*/
-  store: new MemcachedStore()
+  store: new MemcachedStore() /* defualt memcached config: localhost:11211 example: https://www.npmjs.com/package/memcached */
 };
  
 app.use(session(CONFIG, app));
