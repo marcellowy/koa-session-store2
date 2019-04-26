@@ -17,7 +17,8 @@ const session = require('koa-session');
 const Koa = require('koa');
 const app = new Koa();
 
-// require memcached session store
+// Require memcached session store
+// Notice: if the koa-session maxAge more than memcached options.maxExpiration will unknow error happen
 const MemcachedStore = require('koa-session-store2').MemcachedStore;
 
 app.keys = ['some secret hurr'];
