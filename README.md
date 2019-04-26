@@ -1,1 +1,1 @@
-# koa-session-store-memcahced
+# koa-session-store
