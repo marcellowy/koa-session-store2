@@ -1,5 +1,7 @@
 # koa-session-store2
 
+*Requires Node 7.6 or greater for async/await support
+
 ## Getting Started
 
 ### Installation
