@@ -1,1 +1,1 @@
-# koa-session-store
+# koa-session-store2
