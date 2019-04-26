@@ -1,6 +1,5 @@
 # koa-session-store2
 
-[![NPM version][npm-image]][npm-url]
 *Requires Node 7.6 or greater for async/await support*
 
 ## Getting Started
