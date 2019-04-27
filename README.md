@@ -19,9 +19,8 @@ const session = require('koa-session');
 const Koa = require('koa');
 const app = new Koa();
 
-// Require memcached session store
-// Notice: if the koa-session maxAge more than memcached options.maxExpiration will unknow error happen
-const MemcachedStore = require('koa-session-store2').MemcachedStore;
+// memcached, redis example
+const {MemcachedStore,RedisStore} = require('koa-session-store2');
 
 app.keys = ['some secret hurr'];
  
@@ -37,7 +36,8 @@ const CONFIG = {
   signed: true, /** (boolean) signed or not (default true) */
   rolling: false, /** (boolean) Force a session identifier cookie to be set on every response. The expiration is reset to the   original maxAge, resetting the expiration countdown. (default is false) */
   renew: false, /** (boolean) renew session when session is nearly expired, so we can always keep user logged in. (default is false)*/
-  store: new MemcachedStore() /* defualt memcached config: localhost:11211 example: https://www.npmjs.com/package/memcached */
+  store: new MemcachedStore(), /* defualt memcached config: localhost:11211 example: https://www.npmjs.com/package/memcached */
+  // store: new RedisStore()
 };
  
 app.use(session(CONFIG, app));
