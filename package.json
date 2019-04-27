@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/marcellowy/koa-session-store#readme",
   "dependencies": {
-    "memcached": "^2.2.2"
+    "memcached": "^2.2.2",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "debug": "^4.1.1",
