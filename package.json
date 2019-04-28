@@ -1,7 +1,7 @@
 {
   "name": "koa-session-store2",
-  "version": "1.0.5",
-  "description": "Middleware for Koa2 to get/set session use with custom stores such as Redis/Memcached/Mysql  ",
+  "version": "1.0.6",
+  "description": "Middleware for Koa2 to get/set session use with custom stores such as Redis/Memcached/Mysql",
   "autor": "Marcello <lovewy123@gmail.com>",
   "main": "index.js",
   "directories": {
@@ -14,8 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/marcellowy/koa-session-store.git"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcellowy/koa-session-store/issues"
   },
@@ -23,6 +22,7 @@
   "dependencies": {
     "memcached": "^2.2.2",
     "mysql": "^2.17.1",
+    "npm": "^6.9.0",
     "redis": "^2.8.0"
   },
   "devDependencies": {
