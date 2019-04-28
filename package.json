@@ -1,6 +1,6 @@
 {
   "name": "koa-session-store2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Middleware for Koa2 to get/set session use with custom stores such as Redis/memcached  ",
   "autor": "Marcello <lovewy123@gmail.com>",
   "main": "index.js",
